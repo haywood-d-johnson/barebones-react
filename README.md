@@ -27,6 +27,8 @@ npm start/yarn start
 
 
 
+use ```git remote show origin``` then ```git remote rm origin``` to clean and then rename the file in ```index.js```, ```package.json```, and rename the root folder. 
+
 ## Technologies
 
 * [Babel](https://babeljs.io/)
