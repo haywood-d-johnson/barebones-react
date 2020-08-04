@@ -1,6 +1,6 @@
 import React from "react";
 
-export const App = () => {
+const App = () => {
     return (
         <div>
             <h1>Barebones React</h1>
@@ -8,3 +8,5 @@ export const App = () => {
         </div>
     );
 };
+
+export default App;

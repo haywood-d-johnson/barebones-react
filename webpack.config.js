@@ -1,9 +1,9 @@
 const path = require("path");
 
 module.exports = {
-    entry: "./src/app.js",
+    entry: "./src/index.js",
     output: {
-        path: path.join(__dirname, public),
+        path: path.join(__dirname, "public"),
         filename: "bundle.js"
     },
     module: {
@@ -12,5 +12,10 @@ module.exports = {
             test: /\.js$/,
             exclude: /node_modules/
         }]
+    },
+    //can be changed or remove for production
+    devtool: "cheap-module-eval-source-map",
+    devServer: {
+        contentBase: path.join(__dirname, "public")
     }
 };
