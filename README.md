@@ -11,7 +11,7 @@
 
 ## Description
 
- ```create-react-app``` is just a little too large to teach and learn and teach React basics. This is my preferred boilerplate that can handle the major needs for React and get things rendered quicker.
+`create-react-app` is just a little too large to teach and learn and teach React basics. This is my preferred boilerplate that can handle the major needs for React and get things rendered quicker.
 
 ## Getting Started
 
@@ -23,21 +23,17 @@ npm install/yarn install
 npm start/yarn start
 ```
 
-```webpack``` will build and watch the bundle.js file, but it is in the ```.gitignore``` 
+`webpack` will build and watch the bundle.js file, but it is in the `.gitignore`
 
-
-
-use ```git remote show origin``` then ```git remote rm origin``` to clean and then rename the file in ```index.js```, ```package.json```, and rename the root folder. 
+use `git remote show origin` then `git remote rm origin` to clean and then rename the file in `index.js`, `package.json`, and rename the root folder.
 
 ## Technologies
 
-* [Babel](https://babeljs.io/)
+-   [Babel](https://babeljs.io/)
 
-* [Webpack](https://webpack.js.org/)
+-   [Webpack](https://webpack.js.org/)
 
-* [React](https://reactjs.org/)
-
-  
+-   [React](https://reactjs.org/)
 
 ## Plans
 
