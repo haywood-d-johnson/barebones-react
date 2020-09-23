@@ -4,6 +4,7 @@
 ## Table Of Contents
 
 -   [Description](#description)
+-   [Folder Structure](#folder-structure)
 -   [Getting Started](#getting-started)
 -   [Technologies](#technologies)
 -   [Plans](#plans)
@@ -12,6 +13,25 @@
 ## Description
 
 `create-react-app` is just a little too large to teach and learn and teach React basics. This is my preferred boilerplate that can handle the major needs for React and get things rendered quicker.
+
+## Folder Structure
+
+```
+barebones-react/
+  📦public
+    ┗ 📜index.html
+  📦src
+    ┣ 📜App.js
+    ┗ 📜index.js
+  📦test
+    ┗ 📜App.test.js
+  📜.babelrc
+  📜.gitignore
+  📜README.md
+  📜package.json
+  📜webpack.config.js
+  📜yarn.lock
+```
 
 ## Getting Started
 
@@ -37,7 +57,6 @@ use `git remote show origin` then `git remote rm origin` to clean and then renam
 
 ## Plans
 
--   [ ] Add React Router
 -   [ ] Add Testing
 -   [ ] Add TypeScript Support
 
