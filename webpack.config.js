@@ -13,6 +13,10 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
             },
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"],
+            },
         ],
     },
     //can be changed or remove for production
