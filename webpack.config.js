@@ -1,16 +1,31 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: "./index.js",
+    mode: "development",
     output: {
         path: path.join(__dirname, "public"),
         filename: "bundle.js",
     },
+    target: "web",
+    devServer: {
+        port: "3000",
+        static: {
+            directory: path.join(__dirname, "public"),
+        },
+        open: true,
+        hot: true,
+        liveReload: true,
+    },
+    resolve: {
+        extensions: [".js", ".jsx", ".json"],
+    },
     module: {
         rules: [
             {
-                loader: "babel-loader",
-                test: /\.js$/,
+                use: "babel-loader",
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
             },
             {
@@ -20,8 +35,10 @@ module.exports = {
         ],
     },
     //can be changed or remove for production
-    devtool: "cheap-module-eval-source-map",
-    devServer: {
-        contentBase: path.join(__dirname, "public"),
-    },
+    //devtool: "cheap-module-eval-source-map",
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, "public", "index.html"),
+        }),
+    ],
 };
