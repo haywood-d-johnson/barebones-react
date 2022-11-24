@@ -18,19 +18,19 @@
 
 ```
 barebones-react/
-  📦public
-    ┗ 📜index.html
-  📦src
-    ┣ 📜App.js
-    ┗ 📜index.js
-  📦test
-    ┗ 📜App.test.js
-  📜.babelrc
-  📜.gitignore
-  📜README.md
-  📜package.json
-  📜webpack.config.js
-  📜yarn.lock
+ ┣ 📂public
+ ┃ ┗ 📜index.html
+ ┣ 📂src
+ ┣ 📂test
+ ┃ ┗ 📜App.test.js
+ ┣ 📜.babelrc
+ ┣ 📜.gitignore
+ ┣ 📜App.js
+ ┣ 📜README.md
+ ┣ 📜index.js
+ ┣ 📜package-lock.json
+ ┣ 📜package.json
+ ┗ 📜webpack.config.js
 ```
 
 ## Getting Started
